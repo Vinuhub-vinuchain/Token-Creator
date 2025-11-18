@@ -64,7 +64,7 @@ export const useWallet = () => {
   const fetchCreationFee = async () => {
     if (!provider) return;
     try {
-      const factoryAddress = '0x451B1Ac95D2E2E8d920C7a54204a7f3F9290331d';
+      const factoryAddress = '0xAAbe8531d02C2b1c1FCaa954E2E38D6bA1A6e0f7';
       const factoryABI = ['function creationFee() external view returns (uint256)'];
       const factory = new ethers.Contract(factoryAddress, factoryABI, provider);
       const feeWei = await factory.creationFee();
