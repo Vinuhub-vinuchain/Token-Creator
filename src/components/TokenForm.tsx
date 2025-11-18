@@ -42,7 +42,7 @@ const TokenForm: React.FC<TokenFormProps> = ({ tokenParams, setTokenParams }) =>
 
     setDeploying(true);
     try {
-      const factoryAddress = '0x451B1Ac95D2E2E8d920C7a54204a7f3F9290331d';
+      const factoryAddress = '0xAAbe8531d02C2b1c1FCaa954E2E38D6bA1A6e0f7';
       const factoryABI = [
         'function createToken(string memory name, string memory symbol, uint256 initialSupply, uint8 decimals, uint256 buyTaxRate, uint256 sellTaxRate, uint256 burnRate, address devWallet, uint256 maxTxPercentage, bool renounce) external payable returns (address)',
         'function creationFee() external view returns (uint256)',
