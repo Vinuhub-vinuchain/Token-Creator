@@ -200,7 +200,7 @@ const TokenForm: React.FC<TokenFormProps> = ({ tokenParams, setTokenParams }) =>
           className="w-full p-2 border border-white rounded bg-black text-white"
         />
         {errors.devWallet && <p className="text-red-500 text-xs mt-1">{errors.devWallet}</p>}
-        <p className="text-xs text-gray-400">Address to receive taxes (required if taxes > 0%)</p>
+        <p className="text-xs text-gray-400">Address to receive taxes (required if taxes 0%)</p>
       </div>
       <div>
         <label className="block text-sm mb-1">Max Transaction Amount (% of supply)</label>
@@ -240,3 +240,5 @@ const TokenForm: React.FC<TokenFormProps> = ({ tokenParams, setTokenParams }) =>
     </div>
   );
 };
+
+export default TokenForm;

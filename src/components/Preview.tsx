@@ -19,3 +19,5 @@ const Preview: React.FC<PreviewProps> = ({ tokenParams }) => {
     </div>
   );
 };
+
+export default Preview;
