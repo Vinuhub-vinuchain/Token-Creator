@@ -6,16 +6,16 @@ interface PreviewProps {
 
 const Preview: React.FC<PreviewProps> = ({ tokenParams }) => {
   return (
-    <div className="mt-4 p-4 border border-white rounded-lg bg-black shadow">
-      <p>Token: {tokenParams.name || 'MyToken'} ({tokenParams.symbol || 'MTK'})</p>
-      <p>Supply: {tokenParams.totalSupply ? Number(tokenParams.totalSupply).toLocaleString() : '1,000,000,000'}</p>
-      <p>Decimals: {tokenParams.decimals}</p>
-      <p>Buy Tax: {tokenParams.buyTaxRate}%</p>
-      <p>Sell Tax: {tokenParams.sellTaxRate}%</p>
-      <p>Burn Rate: {tokenParams.burnRate}%</p>
-      <p>Dev Wallet: {tokenParams.devWallet || 'Not set'}</p>
-      <p>Max Tx: {tokenParams.maxTx ? `${tokenParams.maxTx}%` : 'None'}</p>
-      <p>Renounce Ownership: {tokenParams.renounceOwnership ? 'Yes' : 'No'}</p>
+    <div className="preview mt-6">
+      <p>Token: <span>{tokenParams.name || 'MyToken'}</span> (<span>{tokenParams.symbol || 'MTK'}</span>)</p>
+      <p>Supply: <span>{tokenParams.totalSupply ? Number(tokenParams.totalSupply).toLocaleString() : '1,000,000,000'}</span></p>
+      <p>Decimals: <span>{tokenParams.decimals}</span></p>
+      <p>Buy Tax: <span>{tokenParams.buyTaxRate}%</span></p>
+      <p>Sell Tax: <span>{tokenParams.sellTaxRate}%</span></p>
+      <p>Burn Rate: <span>{tokenParams.burnRate}%</span></p>
+      <p>Dev Wallet: <span>{tokenParams.devWallet || 'Not set'}</span></p>
+      <p>Max Tx: <span>{tokenParams.maxTx ? `${tokenParams.maxTx}%` : 'None'}</span></p>
+      <p>Renounce Ownership: <span>{tokenParams.renounceOwnership ? 'Yes' : 'No'}</span></p>
     </div>
   );
 };
