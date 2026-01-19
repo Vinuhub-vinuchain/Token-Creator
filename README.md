@@ -10,4 +10,4 @@ A React-based application for creating tokens on VinuChain using the TokenFactor
   - Dev wallet for tax collection, max transaction limit.
   - Option to renounce ownership.
 - Deploy tokens to the TokenFactory contract at `0x451B1Ac95D2E2E8d920C7a54204a7f3F9290331d`.
-- Manual liquidity addition instructions for VinuSwap.
+- Manual liquidity addition instructions for VinuSwap. 
